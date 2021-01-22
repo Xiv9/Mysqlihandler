@@ -15,10 +15,10 @@ from urllib import request
 def console():
     try: 
         if os.name == "nt":
-            ctypes.windll.kernel32.SetConsoleTitleA("DSEnum")
+            ctypes.windll.kernel32.SetConsoleTitleA("SqliHandler")
 
         else:
-            sys.stdout.write("\x1b]2;DSEnum\x07")
+            sys.stdout.write("\x1b]2;SqliHandler\x07")
             
     except:
         pass
@@ -59,13 +59,13 @@ def main():
 
     except IndexError:
         logo = f"""{Fore.RED}
-██████╗ ███████╗      ███████╗███╗   ██╗██╗   ██╗███╗   ███╗
-██╔══██╗██╔════╝      ██╔════╝████╗  ██║██║   ██║████╗ ████║
-██║  ██║███████╗█████╗█████╗  ██╔██╗ ██║██║   ██║██╔████╔██║
-██║  ██║╚════██║╚════╝██╔══╝  ██║╚██╗██║██║   ██║██║╚██╔╝██║
-██████╔╝███████║      ███████╗██║ ╚████║╚██████╔╝██║ ╚═╝ ██║
-╚═════╝ ╚══════╝      ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝
-    Usage : python3 main.py --search | --beautify | --inject
+   _____       ___ __  __                ____         
+  / ___/____ _/ (_) / / /___ _____  ____/ / /__  _____
+  \__ \/ __ `/ / / /_/ / __ `/ __ \/ __  / / _ \/ ___/
+ ___/ / /_/ / / / __  / /_/ / / / / /_/ / /  __/ /    
+/____/\__, /_/_/_/ /_/\__,_/_/ /_/\__,_/_/\___/_/     
+        /_/                                           
+  Usage : python3 main.py --search | --beautify | --inject
         """
         print(logo)
 
